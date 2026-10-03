@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTI - Himpunan Mahasiswa Teknologi Informasi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #63b3ed;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('https://placeholder.com') no-repeat center center/cover;
+            color: white;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            color: #2b6cb0;
+            margin-bottom: 0.5rem;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+        .highlight {
+            border-left: 4px solid #3182ce;
+            padding-left: 1rem;
+            background: #ebf8ff;
+        }
+        footer {
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <div class="logo">
+            <h1>HMTI</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#kegiatan">Kegiatan</a>
+            <a href="#artikel">Artikel</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Section A: Home / Perkenalan Utama -->
+    <section id="home">
+        <div class="hero">
+            <h2>Selamat Datang di HMTI</h2>
+            <p>Wadah kreativitas, inovasi, dan kolaborasi Mahasiswa Teknologi Informasi.</p>
+        </div>
+        
+        <div class="grid" style="margin-top: 3rem;">
+            <div class="card">
+                <h3>Tentang HMTI</h3>
+                <p>Himpunan Mahasiswa Teknologi Informasi (HMTI) adalah organisasi mahasiswa intra-kampus yang bertujuan untuk mengembangkan potensi akademik dan non-akademik mahasiswa di bidang teknologi, informatika, dan komunikasi.</p>
+            </div>
+            <div class="card highlight">
+                <h3>Highlight Kegiatan Utama</h3>
+                <p><strong>IT Workshop & Cyber Security Seminar 2026</strong> akan segera hadir bulan depan! Jangan lewatkan kesempatan belajar langsung dari para praktisi industri top nasional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section B: Informasi Kegiatan -->
+    <section id="kegiatan" style="background-color: #edf2f7; border-radius: 8px;">
+        <h2 style="text-align: center; color: #1a365d;">Kegiatan Mendatang</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web Development Bootcamp</h3>
+                <div class="meta">
+                    <p>📅 Tanggal: 15 Oktober 2026</p>
+                    <p>📍 Lokasi: Laboratorium Komputer Utama</p>
+                </div>
+                <p>Pelatihan intensif pembuatan website modern menggunakan framework React dan Tailwind CSS untuk pemula hingga tingkat lanjut.</p>
+            </div>
+            <div class="card">
+                <h3>HMTI Sharing Session</h3>
+                <div class="meta">
+                    <p>📅 Tanggal: 28 Oktober 2026</p>
+                    <p>📍 Lokasi: Ruang Seminar Gedung C / Zoom Meeting</p>
+                </div>
+                <p>Diskusi santai bersama alumni HMTI yang sukses berkarier di perusahaan Unicorn mengenai tips menembus dunia kerja.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section C: Artikel / Informasi -->
+    <section id="artikel">
+        <h2 style="text-align: center; color: #1a365d; margin-bottom: 1rem;">Artikel & Informasi</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Perkembangan Artificial Intelligence di Tahun 2026</h3>
+                <div class="meta">Dipublikasikan pada: 1 Oktober 2026</div>
+                <p>Kecerdasan buatan (AI) kini bukan lagi sekadar alat bantu, melainkan mitra kolaborasi utama dalam industri perangkat lunak. Artikel ini membahas bagaimana mahasiswa IT harus beradaptasi dengan kehadiran AI yang semakin terintegrasi dalam alur kerja coding sehari-hari.</p>
+            </div>
+            <div class="card">
+                <h3>Tips Memulai Karier Sebagai UI/UX Designer</h3>
+                <div class="meta">Dipublikasikan pada: 25 September 2026</div>
+                <p>Menjadi desainer produk digital memerlukan keseimbangan antara empati pengguna dan logika bisnis. Simak langkah taktis membangun portofolio dari proyek-proyek kecil HMTI untuk memikat para rekruiter perusahaan teknologi global.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section D: Contact -->
+    <section id="kontak" style="background-color: #1a365d; color: white; border-radius: 8px; text-align: center;">
+        <h2>Hubungi Kami</h2>
+        <p style="margin-bottom: 2rem;">Punya pertanyaan seputar kegiatan HMTI atau ingin berkolaborasi? Silakan hubungi kami.</p>
+        <div style="font-size: 1.1rem; line-height: 2;">
+            <p>📧 Email: <strong>sekretariat@hmti-univ.ac.id</strong></p>
+            <p>📸 Instagram: <strong>@hmti_universitas</strong></p>
+            <p>📍 Sekretariat: <strong>Gedung Kemahasiswaan Lantai 2, Ruang 204</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Himpunan Mahasiswa Teknologi Informasi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
